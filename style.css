@@ -271,6 +271,7 @@
   z-index: -1;
   width: 0%;
   height: 100%;
+  transition: 0.6s ease;
   background-color: black;
   transform: translateX(50%);
 }
@@ -292,6 +293,7 @@
 .case-st-container .case-st-div1 .case_studies {
   line-height: 5;
   font-size: small;
+  color: rgb(170, 167, 167);
 }
 .case-st-container .case-st-div1 .view-para2 {
   line-height: 4;
@@ -345,14 +347,215 @@
   line-height: 2;
 }
 .dig-model .dig-para {
-  line-height: 2;
+  line-height: 4;
   font-size: large;
   font-style: oblique;
 }
+.dig-model .explore1-para {
+  display: inline-block;
+  width: 25%;
+  line-height: 3;
+  border: 1px solid white;
+  text-align: center;
+}
 .dig-model .explore1-para #explore1-anchor {
   text-decoration: none;
-  border: 1px solid white;
   color: white;
-  padding: 2% 4%;
-  line-height: 8;
+}
+
+.explore1-para {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+.explore1-para:hover::before {
+  transform: translateX(0%);
+  width: 100%;
+}
+
+.explore1-para::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 0%;
+  background-color: black;
+  transform: translateX(50%);
+  transition: 1s ease;
+}
+
+.sub-digtal_model {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.sub-digtal_model .clint-speak-div {
+  width: 50%;
+  height: 100%;
+}
+.sub-digtal_model .clint-speak-div .client-speak {
+  line-height: 4;
+  color: rgb(170, 167, 167);
+}
+.sub-digtal_model .clint-speak-div .client-speak-head {
+  line-height: 1.4;
+}
+.sub-digtal_model .clint-speak-div .client-speak-para {
+  line-height: 4;
+}
+.sub-digtal_model .clint-speak-div .client-speak-para #sec2-view1 {
+  text-decoration: none;
+  color: white;
+}
+.sub-digtal_model .client-testimonial-div {
+  width: 40%;
+  height: 100%;
+  padding-left: 5%;
+}
+.sub-digtal_model .client-testimonial-div .client-test1 {
+  line-height: 4;
+  color: rgb(170, 167, 167);
+}
+.sub-digtal_model .client-testimonial-div .client-testi-head {
+  line-height: 1.4;
+}
+.sub-digtal_model .client-testimonial-div .client-testi-para {
+  line-height: 4;
+}
+.sub-digtal_model .client-testimonial-div .client-testi-para #sec2-view2 {
+  text-decoration: none;
+  color: white;
+}
+
+.sec3-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/responsive/newdesign/talent-transformations-lead-tab.png);
+  background-position: 100%, 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #801f7e;
+  color: white;
+}
+
+.sec3-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec3-subdiv-cont {
+  width: 45%;
+  height: 42%;
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.sec3-subdiv-cont .sec3-subdiv-head {
+  font-size: 3.5em;
+  font-family: "Open Sans", "Helvetica Neue";
+  line-height: 1.3;
+}
+.sec3-subdiv-cont .sec3-subdiv-para {
+  font-size: 1.4em;
+  font-style: oblique;
+  line-height: 2;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+.sec3-subdiv-cont .sec3-subdiv-anchor_para {
+  height: 15%;
+  width: 25%;
+  border: 1px solid white;
+  text-align: center;
+}
+.sec3-subdiv-cont .sec3-subdiv-anchor_para #sec3-explore {
+  display: inline-block;
+  padding-top: 7%;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.sec3-subdiv-cont1 {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.subdiv-cont1-div1 {
+  width: 25%;
+  height: 50%;
+  margin-left: 5%;
+}
+.subdiv-cont1-div1 .insights {
+  line-height: 4;
+  color: rgb(171, 165, 165);
+}
+.subdiv-cont1-div1 .insights-head {
+  line-height: 1;
+}
+.subdiv-cont1-div1 .insights-para {
+  line-height: 1;
+  width: 30%;
+  height: 25%;
+}
+.subdiv-cont1-div1 .insights-para #insights-view {
+  padding-top: 12%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.subdiv-cont1-div2 {
+  width: 20%;
+  height: 50%;
+  margin-left: 1%;
+}
+.subdiv-cont1-div2 .nbsp2 {
+  line-height: 4;
+}
+.subdiv-cont1-div2 .nbsp-head {
+  line-height: 1;
+}
+.subdiv-cont1-div2 .nbsp-para {
+  line-height: 3;
+}
+.subdiv-cont1-div2 .nbsp-para #nbsp-view {
+  text-decoration: none;
+  color: white;
+}
+
+.sec3-subdiv-anchor_para {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+.sec3-subdiv-anchor_para:hover::before {
+  transform: translateX(0%);
+  transition: 1s ease;
+  width: 100%;
+}
+
+.sec3-subdiv-anchor_para::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 0%;
+  transition: 0.6s ease;
+  transform: translateX(50%);
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
