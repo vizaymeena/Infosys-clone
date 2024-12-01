@@ -4,10 +4,83 @@
   box-sizing: border-box;
 }
 
+#header {
+  height: 100vh;
+  width: 100%;
+}
+
 #navhead-section {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/e-learning-now-serious.jpg);
+  background-size: cover;
+  background-position: -135px;
+}
+#navhead-section .text-head {
+  padding-left: 4%;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin-top: 4%;
+  text-align: center;
+  color: white;
+  align-items: flex-start;
+}
+#navhead-section .text-head .text-h1 {
+  margin-right: 20%;
+  text-align: left;
+  height: 30%;
+  width: 70%;
+  font-size: 50px;
+  font-weight: 300;
+  font-family: serif;
+  line-height: 60px;
+  margin-top: 10%;
+  font-stretch: 100%;
+}
+#navhead-section .text-head .text-p {
+  border: 1px solid white;
+  margin-top: 6%;
+  display: inline-block;
+  height: 15%;
+  width: 16%;
+}
+
+#text-read_more {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.text-p {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+.text-p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 0%;
+  transition: 1s ease;
+  transform: translateX(50%);
+}
+
+.text-p:hover::before {
+  transform: translateX(0%);
+  width: 100%;
+  background-color: rgb(0, 0, 0);
 }
 
 #nav {
@@ -34,7 +107,7 @@
   justify-self: flex-start;
   font-size: xx-large;
   color: white;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
 .nav-anchors {
@@ -74,6 +147,7 @@
   width: 100%;
   font-size: x-large;
   text-align: end;
+  cursor: pointer;
 }
 
 .hamburger-icon {
@@ -81,7 +155,6 @@
   height: 45%;
   margin-right: 4%;
   background-color: rgb(255, 255, 255);
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +162,7 @@
   justify-content: space-evenly;
   border-radius: 100%;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 .owl1 {
@@ -107,4 +181,178 @@
   background-color: black;
   height: 2px;
   width: 20px;
+}
+
+.main_sect-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/responsive/newdesign/digital-capabilities-lead.png);
+  background-position: 100%;
+  background-color: #a76303;
+  background-size: cover;
+}
+
+.sub-main_sect {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sub-main_sect .div1 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sub-main_sect .div1 .digital-core {
+  height: 30%;
+  width: 50%;
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 4;
+  font-family: "Times New Roman", Times;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.sub-main_sect .div1 .build-vital {
+  color: white;
+  margin-left: 5%;
+  line-height: 6;
+  font-style: oblique;
+  font-size: 22px;
+  margin-top: 1.5%;
+  width: 50%;
+}
+
+.explore-div {
+  height: 5%;
+  width: 10%;
+  border: 1px solid white;
+  margin-left: 5%;
+}
+.explore-div .explore-para {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore-div .explore-para #explore-anchor {
+  text-decoration: none;
+  color: white;
+}
+
+.explore-div {
+  height: 7%;
+  width: 12%;
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: 2s ease;
+}
+
+.explore-div:hover::before {
+  transform: translateX(0%);
+  width: 100%;
+  transition: 1s ease;
+}
+
+.explore-div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(50%);
+}
+
+.case-st-container {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  padding-left: 5%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.case-st-container .case-st-div1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+}
+.case-st-container .case-st-div1 .case_studies {
+  line-height: 5;
+  font-size: small;
+}
+.case-st-container .case-st-div1 .view-para2 {
+  line-height: 4;
+}
+.case-st-container .case-st-div1 .view-para2 #view1 {
+  text-decoration: none;
+  color: white;
+}
+.case-st-container .case-st-div2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+}
+.case-st-container .case-st-div2 .nbsp {
+  line-height: 4;
+}
+.case-st-container .case-st-div2 .view-para2 {
+  line-height: 4;
+}
+.case-st-container .case-st-div2 .view-para2 #view2 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+#section-2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #0067a0;
+  background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/responsive/newdesign/digital-operating-models-lead.png);
+  background-position: 0%;
+  background-size: cover;
+}
+
+.main-sect-2 {
+  height: 50vh;
+  width: 50%;
+  float: right;
+  margin-top: 4%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.dig-model {
+  margin-top: 5%;
+}
+.dig-model .dig-head {
+  font-size: 50px;
+  line-height: 2;
+}
+.dig-model .dig-para {
+  line-height: 2;
+  font-size: large;
+  font-style: oblique;
+}
+.dig-model .explore1-para #explore1-anchor {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  padding: 2% 4%;
+  line-height: 8;
 }/*# sourceMappingURL=style.css.map */
