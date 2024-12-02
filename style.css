@@ -1228,4 +1228,305 @@
 }
 
 /* Animation sub classes hover effects Ends */
-/* Animation class Ends *//*# sourceMappingURL=style.css.map */
+/* Animation class Ends */
+/* Ring the sound of opportunity ---->> starts  */
+.lastof-s4 {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0% 7.5%;
+  margin-bottom: 5%;
+  height: 60vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+.lastof-s4 .lastof-div_cont {
+  color: white;
+  width: 60%;
+  margin-bottom: 5%;
+  font-size: 35px;
+  margin-left: 5%;
+}
+.lastof-s4 .lastof-para_div {
+  margin-left: 5%;
+  width: 15%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: 1s ease;
+}
+.lastof-s4 .lastof-para_div .lastof-anchorpara {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s ease;
+}
+.lastof-s4 .lastof-para_div #lastof-anchortag {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 8%;
+  transition: 1s ease;
+}
+
+/* Read More Hover Effects */
+.lastof-para_div:hover #lastof-anchortag {
+  color: white;
+  transition: 1s ease;
+}
+
+.lastof-para_div:hover .lastof-anchorpara {
+  background-color: #151C4A;
+  border: 2px solid white;
+  transition: 1s ease;
+}
+
+/* Background-image 'The play button'  */
+.lastof-s4 {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.lastof-s4:hover::before {
+  transform: scale(1.2);
+}
+
+/* Inserting image through :: Before */
+.lastof-s4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/18/banner/launches-new-sonic-identity-lead.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  transition: 1s ease;
+  background-position: 100%;
+}
+
+/* Ring of opportunity ends*/
+.ourpurpose-cont {
+  height: 40vh;
+  width: 100%;
+}
+.ourpurpose-cont .our-purose {
+  height: 35vh;
+  width: 80%;
+  margin-left: 10%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid cornflowerblue;
+  border-radius: 0 180deg 0 180deg;
+}
+.ourpurpose-cont .our-purose h1 {
+  font-size: 40px;
+}
+.ourpurpose-cont .our-purose p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/*                                             ABOUT - US STARTS ------>>                                      */
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.about_us-sub-container1 {
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+}
+.about_us-sub-container1 .about-div2 {
+  font-size: 30px;
+  line-height: 1.5;
+}
+.about_us-sub-container1 .about-div3 {
+  font-size: 20px;
+  width: 50%;
+  margin-left: 25%;
+  font-family: Montserrat;
+  font-weight: 100;
+  color: rgb(171, 168, 168);
+}
+
+.about_us-sub-container2 {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  gap: 25%;
+}
+.about_us-sub-container2 .country-stats {
+  width: 30%;
+}
+.about_us-sub-container2 .country-stats h4 {
+  font-size: 50px;
+}
+.about_us-sub-container2 .country-stats h4 p {
+  width: 20%;
+}
+.about_us-sub-container2 .revenue-stats {
+  width: 30%;
+}
+.about_us-sub-container2 .revenue-stats h4 {
+  display: flex;
+  font-size: 20px;
+}
+.about_us-sub-container2 .revenue-stats span {
+  font-size: 30px;
+}
+.about_us-sub-container2 .training-stats {
+  width: 30%;
+}
+.about_us-sub-container2 .training-stats h4 {
+  display: flex;
+  font-size: 50px;
+}
+.about_us-sub-container2 .training-stats span {
+  font-size: 30px;
+}
+
+/*  Investors Starts ---->> */
+.investor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.investor-sub-container1 {
+  height: 30vh;
+  width: 100%;
+  text-align: center;
+}
+.investor-sub-container1 .investor-div1 p {
+  font-size: 20px;
+}
+.investor-sub-container1 .investor-div2 {
+  font-size: 35px;
+}
+.investor-sub-container1 .investor-div3 {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Arial, sans-serif;
+  color: rgba(134, 134, 134, 0.947);
+}
+
+.investor-sub-container2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.investor-sub-container2 .Annual-report-container {
+  height: 60vh;
+  width: 58%;
+  margin-left: 5%;
+}
+
+.investor-central-container {
+  margin-right: 5%;
+  height: 60vh;
+  width: 30%;
+}
+.investor-central-container .investors-div1 h3 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+.investor-central-container .investors-div2 {
+  height: 20%;
+  border-bottom: 2px solid gray;
+  line-height: 2;
+}
+.investor-central-container .investors-div2 p {
+  color: rgb(147, 147, 147);
+}
+.investor-central-container .investors-div3 {
+  height: 20%;
+  border-bottom: 2px solid gray;
+  line-height: 2;
+}
+.investor-central-container .investors-div3 p {
+  color: rgb(147, 147, 147);
+}
+.investor-central-container .investors-div3 h3 {
+  color: rgb(82, 82, 82);
+}
+.investor-central-container .investors-div4 {
+  height: 20%;
+  border-bottom: 2px solid gray;
+  line-height: 2;
+}
+.investor-central-container .investors-div4 p {
+  color: rgb(147, 147, 147);
+}
+.investor-central-container .investors-div4 h3 {
+  color: rgb(82, 82, 82);
+}
+.investor-central-container .investor-anchor {
+  height: 20%;
+  line-height: 2;
+}
+.investor-central-container p {
+  margin-top: 5%;
+  color: rgb(147, 147, 147);
+}
+.investor-central-container h3 {
+  color: rgb(82, 82, 82);
+}
+.investor-central-container #investor-anchor {
+  text-decoration: none;
+  color: #0067a0;
+}
+
+.Annual-report-container {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: 1.5s ease;
+  overflow: hidden;
+}
+
+.Annual-report-container:hover::before {
+  transform: scale(1.2);
+  transition: 1.5s ease;
+}
+
+.Annual-report-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/annual-report-2024-mob.jpg);
+  height: 100%;
+  width: 100%;
+  transition: 1.5s ease;
+}
+
+/* Investors Ends *//*# sourceMappingURL=style.css.map */
