@@ -624,3 +624,707 @@
     transform: translateX(50%);
     background-color: black;
 }
+
+// Section-4 Starts
+
+
+
+.sec4-the_next{
+    height: 50vh;
+    width: 100%;
+}
+.next-content{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+
+    .do-more{
+        img{
+            margin-top: 6%;
+        }  
+    }
+    .the-next{
+        h1{
+            color: black;
+            margin-top: 5px;
+            font-size: 40px;
+        }
+    }
+    .the-next-para{
+        p{  width: 50% ;
+            height: 5%;
+            color: rgb(130, 130, 130);
+            margin-left: 25%;
+            font-weight: 10;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            margin-top: 1%;
+            font-size: 35px;
+           
+        }
+    }
+}
+
+
+// Transition-div starts
+
+.transition-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    // 1st :- vr image starts
+
+    .vr-div{
+        margin-left: 5%;
+        height: 80%;
+        width: 45%;
+        // border: 1px solid black;
+        .suvdiv-vr{ 
+            padding-left: 3%;
+            color: white;
+            font-size: 20px;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            // background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/experience.jpg);   //  "" Provided Background-image in ::Before psseduio class in this div
+            display: flex;
+            flex-direction:column ;
+            justify-content: flex-end;
+            h1{
+                line-height: 2;
+            }
+            h3{
+                line-height: 2;
+            }
+            p{
+                margin-bottom: 2%;
+            }
+        } 
+    }
+}
+
+// Transition-div ends..
+
+// Transition-div2 Starts
+
+.transition-div2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    .after-vr-div{
+        height: 80%;
+        width: 100%;
+        // border: 2px solid red;
+        .subafter-vr1{
+            padding-left: 3%;
+            height: 50%;
+            width: 100%;
+            border-left: 2px solid blue;
+            border-top : 2px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            // background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/insight.jpg); /* Insights */
+            background-size: contain;
+            background-size: 100% 100%;
+            h1{
+                line-height: 2;
+            }
+            h3{
+                line-height: 1;
+            }
+            p{
+                margin-bottom: 2%;
+            }
+            
+        }
+        .subafter-vr2{
+            padding-left: 3%;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/innovate.jpg); /* Innovate */
+            background-size: cover;
+            background-size: 100% 100%;
+            h1{
+                line-height: 2;
+            }
+            h3{
+                line-height: 2;
+            }
+            p{
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+
+.after2-vr-2{
+    
+    margin-right: 5%;
+    height: 80%;
+    width: 100%;
+    .sub-after1{ 
+        padding-left: 3%;
+        color: white;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/accelerate.jpg);/* Accelerate */
+        background-size: 100% 100%;
+        h1{
+            line-height: 2;
+        }
+        h3{
+            line-height: 0.4;
+            margin-bottom: 2%;
+        }
+        p{
+            margin-bottom: 2%;
+        }
+    }
+    .sub-after2{
+        padding-left: 3%;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/assure.jpg); /* Assured */
+        background-size: 100% 100%;
+        h1{
+            line-height: 2;
+        }
+        h3{
+            line-height: 1;
+        }
+        p{
+            margin-bottom: 2%;
+        }
+    }
+}
+
+// Transition-div2 ENDs..
+
+//                                    * :: Before && :: after  ----transition-div  suvdiv-vr starts *
+
+.suvdiv-vr{
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+  /* Text Translate Starts */
+.suvdiv-vr h1{
+    transition: 0.5s ease;
+    transform: translateY(160%);
+}
+.suvdiv-vr h3,
+.suvdiv-vr p{
+    transform: translateY(200%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.suvdiv-vr:hover h1{
+   transform: translateY(-50%);
+}
+
+.suvdiv-vr:hover h3,
+.suvdiv-vr:hover p{
+    transform: translateY(-80%);
+    opacity: 0.8;
+}
+/* Text Translate Ends */
+
+ 
+/* background-image content starts */
+
+.suvdiv-vr:hover::before{
+    transform: scale(1.2);
+}
+.suvdiv-vr::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/experience.jpg); /*Expereince*/
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease; 
+   
+}
+/* background-image content Ends */
+
+/* background-color content  */
+
+.suvdiv-vr:hover::after{
+    transform: translateY(0%);
+    height: 100%;
+}
+.suvdiv-vr::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+   height: 0%;
+   width: 100%;
+    background-color: rgba(20, 19, 19, 0.477);
+    transition: 0.4s ease;
+    transform: translateY(0%);
+}
+/* background-color ends */
+
+
+                                        //  * :: Before && :: after  ----transition-div  suvdiv-vr ends *
+
+
+
+/* Insight ---->> */  
+/* Text Translate Starts */
+
+.subafter-vr1 h1{
+    transition: 0.5s ease;
+    transform: translateY(100%);
+}
+.subafter-vr1 h3,
+.subafter-vr1 p{
+    transform: translateY(50%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.subafter-vr1:hover h1{
+   transform: translateY(-150%);
+}
+
+.subafter-vr1:hover h3{
+    transform: translateY(-280%);
+    opacity: 0.8;
+
+}
+.subafter-vr1:hover p{
+    transform: translateY(-100%);
+    opacity: 0.8;
+}
+/* Text Translate Ends */
+
+/* Insight background-image*/
+.subafter-vr1{
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.subafter-vr1:hover::before{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.subafter-vr1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/insight.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease; 
+    height: 100%;   /* Doubt :- Have something in mind follow above background-image link of experience image ^ and read out loud its height 0% but still image is showing its apperenace but why?*/
+    width: 100%;
+}
+
+.subafter-vr1:hover::after{
+    transform: translateY(0%);
+    height: 100%;
+}
+.subafter-vr1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(20, 19, 19, 0.477);
+    transition: 0.4s ease;
+    transform: translateY(0%);
+}
+/* <----- Insights */
+
+/* Innovate ---->> */
+
+/* Text transfrom starts */
+.subafter-vr2 h1{
+    transition: 0.5s ease;
+    transform: translateY(200%);
+}
+.subafter-vr2 h3,
+.subafter-vr2 p{
+    transform: translateY(50%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.subafter-vr2:hover h1{
+   transform: translateY(-100%);
+}
+
+.subafter-vr2:hover h3{
+    transform: translateY(-50%);
+    opacity: 0.8;
+    line-height: 1;
+    margin-bottom: 2%;
+
+}
+.subafter-vr2:hover p{
+    transform: translateY(-100%);
+    opacity: 0.8;
+}
+/* Text Translate Ends */
+
+/* Innovate background-image*/
+.subafter-vr2{
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.subafter-vr2:hover::before{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.subafter-vr2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/innovate.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease; 
+    height: 100%;   
+    width: 100%;
+}
+
+.subafter-vr2:hover::after{
+    transform: translateY(0%);
+    height: 100%;
+}
+.subafter-vr2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(20, 19, 19, 0.477);
+    transition: 0.4s ease;
+    transform: translateY(0%);
+}
+
+/* <<------ Innovate */
+
+/* Accelerate ----->*/
+
+/* Text Transform Starts */
+.sub-after1 h1{
+    transition: 0.5s ease;
+    transform: translateY(100%);
+}
+.sub-after1 h3,
+.sub-after1 p{
+    transform: translateY(50%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.sub-after1:hover h1{
+   transform: translateY(-100%);
+}
+
+.sub-after1:hover h3{
+    transform: translateY(-250%);
+    opacity: 0.8;
+    line-height: 1;
+    
+
+}
+.sub-after1:hover p{
+    transform: translateY(-100%);
+    opacity: 0.8;
+}
+/* Text Translate Ends */
+
+/* Innovate background-image*/
+.sub-after1{
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.sub-after1:hover::before{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.sub-after1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/accelerate.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease; 
+    height: 100%;   
+    width: 100%;
+}
+
+.sub-after1:hover::after{
+    transform: translateY(0%);
+    height: 100%;
+}
+.sub-after1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(20, 19, 19, 0.477);
+    transition: 0.4s ease;
+    transform: translateY(0%);
+}
+/* <---- Accelerate*/
+
+/* Assured ----->*/
+
+/* Text Transform Starts */
+.sub-after2 h1{
+    transition: 0.5s ease;
+    transform: translateY(100%);
+}
+.sub-after2 h3,
+.sub-after2 p{
+    transform: translateY(0%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.sub-after2:hover h1{
+   transform: translateY(-130%);
+}
+
+.sub-after2:hover h3{
+    transform: translateY(-250%);
+    opacity: 0.8;
+    line-height: 1;
+    
+
+}
+.sub-after2:hover p{
+    transform: translateY(-40%);
+    opacity: 0.8;
+}
+/* Text Translate Ends */
+
+/* Innovate background-image*/
+.sub-after2{
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.sub-after2:hover::before{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.sub-after2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/assure.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease; 
+    height: 100%;   
+    width: 100%;
+}
+
+.sub-after2:hover::after{
+    transform: translateY(0%);
+    height: 100%;
+}
+.sub-after2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(20, 19, 19, 0.477);
+    transition: 0.4s ease;
+    transform: translateY(0%);
+}
+/* <---- Assured*/
+
+/* Section 5  " Starts " */
+
+/* Animation class Starts */
+.animation-class{
+    display: flex;
+    height: 12vh;
+    width: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    top: -80px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.animated-c2,
+.animated-c3,
+.animated-c4{
+    width: 100%;
+    text-align: center;
+}
+.animated-c1{
+    width: 100%;
+    text-align: center;
+    .plus-para1{
+        text-align: center;
+        width: 15%;
+        height: 35%;
+        font-weight: 1000;
+        margin-left: 38%;
+        margin-top: 8%;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        border-radius: 100%;
+        cursor: pointer;
+        #plus-1{
+            transition: 0.4s ease;
+            margin-top: 10%;
+        }
+       
+}
+}
+.animated-c2{
+    .plus-para2{
+        text-align: center;
+        width: 15%;
+        height: 35%;
+        font-weight: 1000;
+        margin-left: 38%;
+        margin-top: 8%;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        border-radius: 100%;
+        cursor: pointer;
+        #plus-2{
+            transition: 0.4s ease;
+            margin-top: 10%;
+        }
+    }
+}
+.animated-c3{
+    .plus-para3{
+        text-align: center;
+        width: 15%;
+        height: 35%;
+        font-weight: 1000;
+        margin-left: 38%;
+        margin-top: 8%;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        border-radius: 100%;
+        cursor: pointer;
+        #plus-3{
+            transition: 0.4s ease;
+            margin-top: 10%;
+        }
+        
+
+}
+}
+.animated-c4{
+    .plus-para4{
+        text-align: center;
+        width: 15%;
+        height: 35%;
+        font-weight: 1000;
+        margin-left: 38%;
+        margin-top: 8%;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        border-radius: 100%;
+        cursor: pointer;
+        #plus-4{
+            transition: 0.4s ease;
+            margin-top: 10%;
+        }
+
+}
+}
+/* Animation sub classes hover effects starts */
+.animated-c1:hover #plus-1{
+    transform:rotate(360deg)
+}
+.animated-c2:hover #plus-2{
+    transform:rotate(360deg)
+}
+.animated-c3:hover #plus-3{
+    transform:rotate(360deg)
+}
+.animated-c4:hover #plus-4{
+    transform:rotate(360deg)
+}
+/* Animation sub classes hover effects Ends */
+
+/* Animation class Ends */
+
+
