@@ -110,12 +110,9 @@
     justify-content: center;
     align-items: center;
     gap: 0%;
-    
-
     #head-infosys{
         margin-right: 6%;
     }
-
 }
 .nav-container{
     width: 60%;
@@ -135,11 +132,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 6%;
     margin-left: 6%;
     width: 100%;
     height: 100%;
-   
     li{
         list-style-type: none;
         a{
@@ -213,13 +210,13 @@
 }
 // Hamburger icon logo <<--- :: END
 
-
 //  * <<-- HEADER  && navhead-sections ends header -->> *
 
-// _____________________________________________________________________________________________________________________________________//
 
 // * MAIN Starts from here * ---->>
 
+
+// * Section-1 Starts  *//
 .main_sect-container{
  height: 100vh;
  width: 100%;
@@ -228,8 +225,6 @@
  background-color: #a76303;
  background-size: cover;
 }
-
-
 .sub-main_sect{
     height: 100vh;
     width: 100%;
@@ -369,6 +364,10 @@
         }
     }  
 }
+
+
+//* Section -1 Ends *//
+
 
 // Main Section 2 ------>> Starts ...
 #section-2{
@@ -629,6 +628,9 @@
 .sec4-the_next{
     height: 50vh;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .next-content{
     height: 25vh;
@@ -670,6 +672,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 
     // 1st :- vr image starts
 
@@ -1646,3 +1649,417 @@
 }
 
 /* Investors Ends */
+
+/* Contact us starts */
+.contact-us-container{
+    height: 70vh;
+    width: 100%;
+    background-color: #af3dba,;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    .contact-subcontainer1{
+        height: 50vh;
+        width: 50%;
+        display: flex;
+        text-align: center;
+        
+        .sub-cont-div1{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 20px;
+            .americas{
+                height: 50%;
+                width: 100%;
+                border: 1px solid white;
+                padding: 25% 0%;
+                transition: 1s ease;
+            }
+            .asia-pacific{
+                width: 100%;
+                height: 50%;
+                padding: 25% 0%;
+                border: 1px solid white;
+                transition: 1s ease;
+            }
+        }
+        .sub-cont-div2{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 20px;
+            .europe{
+                width: 100%;
+                height: 50%;
+                padding: 25% 0%;
+                border: 1px solid white;
+                transition: 1s ease;
+
+            }
+            .middle-ease{
+                width: 100%;
+                height: 50%;
+                padding: 25% 0%;
+                border: 1px solid white;
+                transition: 1s ease;
+            }
+        }
+    }
+}
+
+/* Contact-us Hover effects */
+.asia-pacific:hover,
+.europe:hover,
+.middle-ease:hover,
+.americas:hover{
+    background-color: #d5d5d5;
+    color: #801f7e;
+    transition: 1s ease;
+}
+.contact-subcontainer2{
+    margin-left: 5%;
+    width: 30%;
+    height: 75%;
+    h1{
+        height: 50%;
+        font-size: 55px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+    }
+    p{
+        margin-top: 20%;
+        width: 50%;
+        height: 12%;
+      
+        text-align: center;
+        background-color: black;
+        transition: 1s ease;
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding-top: 6%;
+            color: white;  
+            transition: 1s ease;
+        }
+    }
+}
+
+.contact-us-anchor:hover{
+    background-color: #801f7e;
+    border: 1px solid black;
+    transition: 1s ease;
+}
+.contact-us-anchor:hover #contact-us-anchor {
+    color: black;
+    transition: 1s ease;
+}
+/* Contact us ends * /
+
+/* Footer Starts*/
+
+.navlinks-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-part1{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    line-height: 2;
+    .subpart1{
+        p{
+            a{
+                text-decoration: none;      
+            }
+        }
+    }
+    .subpart2{
+        p{
+            a{
+                text-decoration: none;      
+            }
+        }
+    }
+    .subpart3{
+        p{
+            a{
+                text-decoration: none;      
+            }
+        }
+    }
+    .subpart4{
+        p{
+            a{
+                text-decoration: none;      
+            }
+        }   
+    }
+    .subpart5{
+        p{
+            a{
+                text-decoration: none;
+            }
+        }   
+    }
+}
+.END-DIV{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    height: 10vh;
+    margin-left: 4%;
+    p{
+        margin-left: 6%;
+        font-size: 20px;
+        margin-bottom: 4%;
+    }
+    form{
+        margin-right: 2%;
+        margin-bottom: 4%;
+    }
+}
+/* Finally End :)  */
+
+
+
+/* Media query of header sections starts */
+@media only screen and (min-width:200px) and (max-width:500px){
+   
+    #nav{
+        height:8vh ;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5%;
+        #head-infosys {
+            width: 80%;
+            height: 100%;
+            font-size:large;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            #subhead-infosys{
+             font-size: 30px;
+             width: 50%;
+             height: 50%;
+            }
+        }
+        .nav-container{
+            display: none;
+        }   
+        .hamburger-icon{
+            width: 50px;
+            height: 30px;
+           
+            margin-right: 0;
+           
+        }  
+        #magnify-div{
+            margin-top: 2em;
+            margin-right: 0;
+            width: 10%;
+            height: 100%;
+            display: inline-block;
+            #magnify-anchor{
+                display: inline-block;
+                padding-top: 0;
+                padding-right: 5%;
+                width: 100%;
+                height: 100%;
+               
+            }    
+        }
+ }
+}
+/* Media query of header sections Ends */
+
+@media only screen and (min-width:200px) and (max-width:500px){
+    #navhead-section{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: 70%;
+        .text-head{
+            width: 100%;
+            height: fit-content;
+            padding-left: 1em;
+            margin-top: 20%;
+            .text-h1{
+                width: 80%;
+                height: 50%;
+                margin-top: 0;
+                font-size: 2.4em;
+                margin-right: 0;
+                font-stretch: narrower;
+            }
+            .text-p{
+                margin-top: 28%;
+                width: 50%;
+                height: 20%;
+            }
+    }    
+    }
+
+.main_sect-container{
+    height: 40em;
+    width: 100%;
+    background-size: cover;
+    background-position: 80%;
+    .sub-main_sect{
+        height: 100%;
+        width: 100%;
+        padding-left: 0.5em;
+        .div1{
+            height: 5em;
+            width: 100%;
+            margin-top: 1.3em;
+            .digital-core{
+                height: 2em;
+                width: 11em;
+                font-size: 2em;
+                line-height: 1;
+                margin-left: 0;
+                margin-top: 1.5em;
+            }
+            .build-vital{
+                width: 100%;
+                height: 2em;
+                font-size: 1em;
+                margin-left: 0;
+                line-height: 1;
+            }
+        }
+    }
+    .explore-div{
+        height: 2em;
+        width: 8em;
+        margin-top: 25em;
+        margin-left: 0;
+    }
+    .case-st-container{
+        display: none;
+     }
+    }
+ }
+
+// section-1 media query starts above [ * right from @media tag * ]and ends here 
+
+// section-2 media query starts
+@media only screen and (min-width:200px) and (max-width:500px){
+#section-2{
+    height: 40em;
+    font-size: 1em;
+    background-size: cover;
+    background-position: 20%;
+ .main-sect-2{
+     height: 19em;
+     width: 22.8em;
+     float: left;
+     .digital-model{
+        margin-left: 1.8em;
+        margin-top: 3em;
+         .dig-model{
+            margin-top: 0;
+            height: 7em;
+            width: 20em;
+             .dig-head{
+                margin-top:0;
+                line-height: 1;
+                font-size: 2em;
+             }
+             .dig-para{
+                margin-top: 1em;
+                line-height: 1;
+                font-size: 1.5em;
+             }
+             .explore1-para{
+                line-height: 1;
+                width: 8em;
+                height: 2em;
+                margin-top: 21em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+         }
+    }
+    .sub-digtal_model{
+        display: none;
+     }
+   }
+          }
+}
+// section-2 media query ends
+// section-3 media query starts
+@media only screen and (min-width:200px) and (max-width:500px){
+.sec3-container{
+    height: 40em;
+    width: 100%;
+    font-size: 1.3em;
+    background-size: cover;
+    background-position: 60%;
+    .sec3-div{
+        height: 20em;
+        width: 100%;
+        .sec3-subdiv-cont{
+            height: 10em;
+            width: 100%; 
+            line-height: 1;
+            padding-left: 5%;
+            margin-left: 0;
+            .sec3-subdiv-head{
+                width: 100%;
+                font-size: 1.6em;
+                line-height: 1.3;
+                margin-top: 2em;
+            }
+            .sec3-subdiv-para{
+                margin-top: 0.8em;
+                width: 14em;
+                font-size: 1em;
+                line-height: 1;
+                margin-bottom: 0;
+            }
+            .sec3-subdiv-anchor_para{
+                height: 1.7em;
+                width: 7em;
+                font-size: 0.9em;
+                line-height: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 22.5em;
+                #sec3-explore{
+                    padding-top: 0.4em;
+                }
+            }
+        }
+        .sec3-subdiv-cont1{
+            height: 10em;
+            width: 17.6em;
+            display: none;
+        }
+    }
+}
+}
+// section-3 query ends 
+
+// the next starts from here
