@@ -687,8 +687,6 @@
             font-size: 20px;
             height: 100%;
             width: 100%;
-            background-size: cover;
-            // background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/experience.jpg);   //  "" Provided Background-image in ::Before psseduio class in this div
             display: flex;
             flex-direction:column ;
             justify-content: flex-end;
@@ -727,8 +725,6 @@
             flex-direction: column;
             justify-content: flex-end;
             color: white;
-            // background-image: url(https://www.infosys.com/content/dam/infosys-web/en/home/images/insight.jpg); /* Insights */
-            background-size: contain;
             background-size: 100% 100%;
             h1{
                 line-height: 2;
@@ -2063,3 +2059,291 @@
 // section-3 query ends 
 
 // the next starts from here
+// Section - 4 starts -->>
+
+@media only screen and (min-width:200px) and (max-width:500px){
+#section-4{
+    background-color: antiquewhite;
+    .sec4-the_next{
+        width: 100%;
+        height: 20em;
+        .next-content{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .the-next{
+                font-size: 2em;
+            }
+            .the-next-para p{
+                font-size: 1.2em;
+                margin-left: 0;
+                width: fit-content;
+            }
+        }
+    }
+}
+}
+// the next ends here :--
+
+// Transition-div media query is here ::-
+@media only screen and (min-width:200px) and (max-width:500px){
+
+    .transition-div{
+        height: fit-content;
+        width: 100%;
+        display: block;
+        .vr-div{
+            width: 100%;
+            margin-left: 0;
+            height: 100vh;
+            .suvdiv-vr{
+                h1{
+                    transition: 1s ease;
+                    margin-bottom: 1em;
+                }
+                h3{
+                   display: none; 
+                }
+                p{
+                    line-height: 1;  
+                }
+            }  
+        }
+    }
+    .transition-div2{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+    }
+}
+// Media ends for transition div :--
+// Animation class media 
+@media only screen and (min-width:200px) and (max-width:500px){
+    .animation-class{
+        width: 100%;
+        height: 100vh;
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .lastof-s4{
+        height: 80vh;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        background-size: cover;
+        background-position: 50%;
+        .lastof-div_cont{
+            width: 100%;
+            margin-left: 0;
+            padding-left: 5%; 
+            h3{ 
+                padding-left: 1.5em;
+                font-size: 0.7em;
+                width: 100%;
+                margin-bottom: 2em;
+            }
+        }
+        .lastof-para_div{
+            margin-top: 8em;
+            width: 8em;
+            height: 3.4em;
+            .lastof-anchorpara{
+                width: 8em;
+                height: 3em;
+            }
+        }   
+    }
+    .ourpurpose-cont{
+        height: 50vh;
+        width: 100%;
+        .our-purose{
+            height: 50vh;
+            width: 100%;
+            margin-left: 0;
+            justify-content: space-between;
+            h1{
+                font-size: 1.5em;
+                width: 100%;
+                line-height: 1;
+                padding-top: 2em;
+            }
+            p{
+                line-height: 1;
+                text-align: left;
+                padding-bottom: 2em;
+            }
+        }
+    }
+// About-us starts 
+#abous_us{
+    height: fit-content;
+    width: 100%;
+    .about-us-container{
+        height: fit-content;
+        width: 100%;
+        .about_us-sub-container1{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            text-align: left;
+            .about-div1{
+                width: 100%;
+                padding-left: 6.2em;
+            }
+            .about-div2 h2{
+                font-size: 1.5em;
+                line-height: 1;
+                padding-left: 1.5em;
+            }
+            .about-div3{
+                margin-left: 0;
+                width: 100%;
+                height: 15vh;
+                h3{
+                    width: 100%;
+                    height: fit-content;
+                    padding:0em 1.4em;
+                }
+            }
+        }
+    }
+    .about_us-sub-container2{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .country-stats{
+            margin-top: 2em;
+            h4{
+                margin-bottom: 0.5em;
+            }
+            
+        }
+        .revenue-stats{
+            margin-top: 2em;
+            h4{
+                margin-bottom: 0.5em;
+            }
+        }
+        .training-stats{
+            margin-top: 2em;
+            h4{
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+ }
+ #investors{
+    width: 100%;
+    height: fit-content;
+    .investor-container{
+        height: fit-content;
+        width: 100%;
+     .investor-sub-container1{
+        height: 40vh;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: flex-start;
+            .investor-div1{
+                padding-top: 2em;
+            }
+            .investor-div2{
+                width: 100%;
+                font-size: 1.4em;
+                line-height: 1;
+            }
+            .investor-div3{
+                width: 100%;
+                padding-top: 1em;
+                font-size: 1em;
+                line-height: 1;
+            }
+     }
+    }
+    }
+    .investor-sub-container2{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        .Annual-report-container{             /*:: before - image background container */
+            height: 50vh;
+            width: 100%;
+            background-position: 40%;
+            margin-left: 0;
+            background-size: cover;
+
+        }
+        .investor-central-container{
+            height: 100vh;
+            width: 100%;
+        }
+    }
+ // Contact us section media Query Starts :--->>   
+ #contact-us-section{
+    .contact-us-container{
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100vh;
+        .contact-subcontainer1{
+            width: 100%;
+            padding-top: 2em;
+        }
+    }
+    .contact-subcontainer2{
+        display: block;
+        width: 100%;
+        height: 40vh;
+        margin-left: 0;
+        h1{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 2em;
+            height: fit-content;
+            font-size: 2em;
+            line-height: 1.2;
+        }
+        p{
+            width: 40%;
+            margin-top: 2em;
+            margin-left: 1em;
+            height: 2em;
+            a{
+                padding-top: 5px;
+            }
+        }
+    } 
+ }
+   .navlinks-container{
+    width: 100%;
+    height: fit-content;
+    .footer-part1{
+      display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+    
+    }
+  }
+  .END-DIV{
+    display: flex;
+    justify-content: space-evenly;
+    p{
+        margin-left: 0;
+    }
+  }
+}    

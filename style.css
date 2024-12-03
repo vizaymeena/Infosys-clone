@@ -611,7 +611,6 @@
   font-size: 20px;
   height: 100%;
   width: 100%;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -645,7 +644,6 @@
   flex-direction: column;
   justify-content: flex-end;
   color: white;
-  background-size: contain;
   background-size: 100% 100%;
 }
 .transition-div2 .after-vr-div .subafter-vr1 h1 {
@@ -1908,5 +1906,287 @@
     height: 10em;
     width: 17.6em;
     display: none;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  #section-4 {
+    background-color: antiquewhite;
+  }
+  #section-4 .sec4-the_next {
+    width: 100%;
+    height: 20em;
+  }
+  #section-4 .sec4-the_next .next-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #section-4 .sec4-the_next .next-content .the-next {
+    font-size: 2em;
+  }
+  #section-4 .sec4-the_next .next-content .the-next-para p {
+    font-size: 1.2em;
+    margin-left: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .transition-div {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    display: block;
+  }
+  .transition-div .vr-div {
+    width: 100%;
+    margin-left: 0;
+    height: 100vh;
+  }
+  .transition-div .vr-div .suvdiv-vr h1 {
+    transition: 1s ease;
+    margin-bottom: 1em;
+  }
+  .transition-div .vr-div .suvdiv-vr h3 {
+    display: none;
+  }
+  .transition-div .vr-div .suvdiv-vr p {
+    line-height: 1;
+  }
+  .transition-div2 {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .animation-class {
+    width: 100%;
+    height: 100vh;
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .lastof-s4 {
+    height: 80vh;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .lastof-s4 .lastof-div_cont {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 5%;
+  }
+  .lastof-s4 .lastof-div_cont h3 {
+    padding-left: 1.5em;
+    font-size: 0.7em;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .lastof-s4 .lastof-para_div {
+    margin-top: 8em;
+    width: 8em;
+    height: 3.4em;
+  }
+  .lastof-s4 .lastof-para_div .lastof-anchorpara {
+    width: 8em;
+    height: 3em;
+  }
+  .ourpurpose-cont {
+    height: 50vh;
+    width: 100%;
+  }
+  .ourpurpose-cont .our-purose {
+    height: 50vh;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+  .ourpurpose-cont .our-purose h1 {
+    font-size: 1.5em;
+    width: 100%;
+    line-height: 1;
+    padding-top: 2em;
+  }
+  .ourpurpose-cont .our-purose p {
+    line-height: 1;
+    text-align: left;
+    padding-bottom: 2em;
+  }
+  #abous_us {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  #abous_us .about-us-container {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  #abous_us .about-us-container .about_us-sub-container1 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+  }
+  #abous_us .about-us-container .about_us-sub-container1 .about-div1 {
+    width: 100%;
+    padding-left: 6.2em;
+  }
+  #abous_us .about-us-container .about_us-sub-container1 .about-div2 h2 {
+    font-size: 1.5em;
+    line-height: 1;
+    padding-left: 1.5em;
+  }
+  #abous_us .about-us-container .about_us-sub-container1 .about-div3 {
+    margin-left: 0;
+    width: 100%;
+    height: 15vh;
+  }
+  #abous_us .about-us-container .about_us-sub-container1 .about-div3 h3 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0em 1.4em;
+  }
+  #abous_us .about_us-sub-container2 {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #abous_us .about_us-sub-container2 .country-stats {
+    margin-top: 2em;
+  }
+  #abous_us .about_us-sub-container2 .country-stats h4 {
+    margin-bottom: 0.5em;
+  }
+  #abous_us .about_us-sub-container2 .revenue-stats {
+    margin-top: 2em;
+  }
+  #abous_us .about_us-sub-container2 .revenue-stats h4 {
+    margin-bottom: 0.5em;
+  }
+  #abous_us .about_us-sub-container2 .training-stats {
+    margin-top: 2em;
+  }
+  #abous_us .about_us-sub-container2 .training-stats h4 {
+    margin-bottom: 0.5em;
+  }
+  #investors {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #investors .investor-container {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  #investors .investor-container .investor-sub-container1 {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #investors .investor-container .investor-sub-container1 .investor-div1 {
+    padding-top: 2em;
+  }
+  #investors .investor-container .investor-sub-container1 .investor-div2 {
+    width: 100%;
+    font-size: 1.4em;
+    line-height: 1;
+  }
+  #investors .investor-container .investor-sub-container1 .investor-div3 {
+    width: 100%;
+    padding-top: 1em;
+    font-size: 1em;
+    line-height: 1;
+  }
+  .investor-sub-container2 {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .investor-sub-container2 .Annual-report-container { /*:: before - image background container */
+    height: 50vh;
+    width: 100%;
+    background-position: 40%;
+    margin-left: 0;
+    background-size: cover;
+  }
+  .investor-sub-container2 .investor-central-container {
+    height: 100vh;
+    width: 100%;
+  }
+  #contact-us-section .contact-us-container {
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+  }
+  #contact-us-section .contact-us-container .contact-subcontainer1 {
+    width: 100%;
+    padding-top: 2em;
+  }
+  #contact-us-section .contact-subcontainer2 {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    margin-left: 0;
+  }
+  #contact-us-section .contact-subcontainer2 h1 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 2em;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 2em;
+    line-height: 1.2;
+  }
+  #contact-us-section .contact-subcontainer2 p {
+    width: 40%;
+    margin-top: 2em;
+    margin-left: 1em;
+    height: 2em;
+  }
+  #contact-us-section .contact-subcontainer2 p a {
+    padding-top: 5px;
+  }
+  .navlinks-container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .navlinks-container .footer-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .END-DIV {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .END-DIV p {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */
